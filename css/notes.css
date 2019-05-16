@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro);
+
+html {
+  scroll-behavior: smooth;
+  font-family: Maven Pro;
+}
+
+/*BUTTONS*/
+button {
+  color: white;
+  background-color: #1abc9c;
+  padding: 10px 25px;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #1abc9c;
+}
+
+/*TAB CUSTOMIZATION*/
+.out {
+  text-align: center;
+}
+
+.tablinks {
+  border: 2px #1abc9c solid;
+  outline: none;
+}
+
+.tablinks:active {
+  background-color: white;
+}
+
+.tab {
+  padding: 10px 20px;
+}
+
+.tab h1 {
+  color: #1abc9c;
+  font-size: 30px;
+}
+
+div.menu {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1abc9c;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+div.menu div.default button {
+  width: auto;
+  display: inline-block;
+}
+
+div.menu button {
+  width: 100%;
+}
+
+div.tabcontent button {
+  color: #1abc9c;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  align-content: center;
+  line-height: 0.25;
+  border: none;
+  outline: solid 1.5px #1abc9c;
+  width: 50%;
+  display: block;
+  height: 4px;
+  margin-left: 25%;
+  margin-top: 20px;
+}
+
+div.tabcontent button:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+#plusButton {
+  font-weight: bold;
+}
+
+/*NOTES CUSTOMIZATION*/
+
+#title {
+  white-space: nowrap;
+  width:200px;
+  overflow: hidden;
+  display:inline;
+  white-space:nowrap;
+  outline: none;
+}
+
+#title br {
+  display:none;
+}
+
+body {
+  margin-left: 160px;
+  max-width: 1000px;
+  background: linear-gradient(90deg, #fbfae8 10px, transparent 1%) center, linear-gradient(#fbfae8 10px, transparent 1%) center, #999;
+  background-size: 11px 11px;
+}
+
+#result {
+  text-align: left;
+  margin: 0 auto;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0px 10px;
+}
+
+#result .tabcontent {
+  display: none;
+  cursor: pointer;
+}
+
+#result .section {
+  outline: none;
+  opacity: 0.8;
+  padding: 5px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+#result .section:hover {
+  opacity: 1;
+  box-shadow: 0px 4px #1abc9c;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+#result h3 {
+  color: #1abc9c;
+}
+
+/*CUSTOM SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*POPUP*/
+
+/*disables left/right scroll*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  background: rgba(11, 64, 54, 0.69);
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+#info {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  padding: 15px;
+  background: #1abc9c;
+  color: white;
+  width: 400px;
+  height: 400px;
+  margin: -100px;
+  z-index: 200;
+}
+
+#infoclose {
+  float: right;
+  cursor: pointer;
+}
+
+.infocontent {
+  padding: 10px;
+}

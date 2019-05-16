@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <title>studying</title>
+  <div class="base" id="base">
+    <h1 class="title">StudyBuddy</h1>
+    <p>welcome to your automatic, interactive note-formatter</p>
+    <p>just input your notes below to get started!</p>
+    <button id="example" onclick="setExample()">or try this example <i class="fa fa-file-text" aria-hidden="true"></i></button>
+
+    <br/>
+
+    <textarea id="input" rows="4" cols="60" placeholder="[title for this page]
+this is a header
+- this is a body text
+-- this is a list"></textarea><br />
+
+    <button id="generate" onclick="storeInput()">generate</button>
+    <p id="reminder">remember to format your input correctly!</p>
+
+  </div>
+</body>
+
+</html>

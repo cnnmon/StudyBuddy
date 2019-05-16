@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <link href="css/notes.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <title>studying</title>
+
+  <body onload="printInput()">
+    <div class="tab">
+      <div class="out">
+        <h1 id="title" contenteditable="true" oninput="updateTitle()">NOTES</h1>
+        <div class="menu" id="tabs">
+
+          <div class="default">
+            <button class="tablinks" onclick="returnHome()"><i class="fa fa-home"></i></button>
+            <button class="tablinks" onclick="openInfo()"><i class="fa fa-info-circle"></i></button>
+          </div>
+        </div>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="info">
+      <div class="infocontrols">
+        <span id="infoclose" onclick="closeInfo()"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+      </div>
+      <div class="infocontent">
+        <h1>Thanks for using StudyBuddy!</h1>
+        <p>How do you use this, exactly?</p>
+        <ul>
+          <li>navigate pages through the left sidebar</li>
+          <li>you can delete pages by deleting the entire title text</li>
+          <li>you can delete paragraph nodes by deleting the entire paragraph text</li>
+          <li>the website will only save your initial input, unless you regenerate it; it can't save any edits just yet</li>
+          <li>add more pages/paragraphs by clicking the +</li>
+        </ul>
+        <p>Good luck studying!</p>
+      </div>
+    </div>
+  </body>
+</body>
+
+</html>

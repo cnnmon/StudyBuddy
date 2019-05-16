@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro);
+
+html {
+  scroll-behavior: smooth;
+  font-family: Maven Pro;
+}
+
+/*BUTTONS*/
+button {
+  color: white;
+  background-color: #1abc9c;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: white;
+  color: #1abc9c;
+}
+
+#example {
+  font-family: Maven Pro;
+  font-size: 13px;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/*BASE & INPUT CUSTOMIZATION*/
+#generate {
+    padding: 10px 25px;
+    border: 2px white solid;
+    margin: 20px;
+}
+
+textarea {
+  font-family: Maven Pro;
+  border-style: none solid solid none;
+  resize: none;
+}
+
+.base {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: #1abc9c;
+  padding: 280px 0px;
+  color: white;
+  font-size: 30px;
+}
+
+.base h1 {
+  line-height: 90%;
+  font-weight: bolder;
+}
+
+.base p {
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 30%;
+}
+
+.base textarea {
+  outline: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#reminder {
+  opacity: 0;
+}
+
+/*UNDERLINE*/
+.title {
+  position: relative;
+}
+.title:hover:after,
+.title:focus:after,
+.title:active:after {
+  width: 100%;
+}
+.title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -3px;
+  height: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+/*NOTES CUSTOMIZATION*/
+body {
+  background: linear-gradient(90deg, #fbfae8 10px, transparent 1%) center, linear-gradient(#fbfae8 10px, transparent 1%) center, #999;
+  background-size: 11px 11px;
+}
+
+/*CUSTOM SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
