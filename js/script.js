@@ -137,8 +137,6 @@ function updateTitle(){
   }
 
   if (document.getElementById("title").innerHTML.trim() == ""){
-    document.getElementById("button"+title).remove();
-    document.getElementById(title).remove();
     var answer = prompt("Type DELETE if you want to delete this page.");
     if(answer.toLowerCase() == "delete"){
       document.getElementById("button"+title).remove();
@@ -234,7 +232,6 @@ function openTab(evt, name) {
 }
 
 function returnHome(){
-  window.location.href = "index.html";
   var answer = prompt("Type HOME if you want to delete your current notes and return to the main screen.");
   if(answer.toLowerCase() == "home"){
     window.location.href = "index.html";
