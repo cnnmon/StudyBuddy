@@ -142,7 +142,7 @@ function updateTitle(){
       document.getElementById("button"+title).remove();
       document.getElementById(title).remove();
     }else{
-      document.getElementById(title).innerHTML = "-";
+      document.getElementById("button"+title).innerHTML = "-";
     }
   }
 }
