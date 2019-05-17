@@ -141,9 +141,12 @@ function updateTitle(){
     if(answer.toLowerCase() == "delete"){
       document.getElementById("button"+title).remove();
       document.getElementById(title).remove();
-    }else{
-      document.getElementById("title").innerHTML = "-";
-      document.getElementById("button"+title).innerHTML = "-";
+    } else if (answer == null) {
+      document.getElementById("title").innerHTML = "Title";
+      document.getElementById("button"+title).innerHTML = "Title";
+    } else {
+      document.getElementById("title").innerHTML = "Title";
+      document.getElementById("button"+title).innerHTML = "Title";
     }
   }
 }
