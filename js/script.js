@@ -137,7 +137,7 @@ function updateTitle(){
   }
 
   if (document.getElementById("title").innerHTML.trim() == ""){
-    //var answer = prompt("Type DELETE if you want to delete this page.");
+    var answer = prompt("Type DELETE if you want to delete this page.");
     if(answer.toLowerCase() == "delete"){
       document.getElementById("button"+title).remove();
       document.getElementById(title).remove();
